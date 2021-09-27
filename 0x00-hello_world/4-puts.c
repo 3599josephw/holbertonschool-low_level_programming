@@ -1,5 +1,9 @@
 #include <stdio.h>
-/* Prints out the following text */
+/**
+ * main - Prints out the following text
+ *
+ * Return: 0
+ */
 int main(void)
 {
 char str[] = "\"Programming is like building a multilingual puzzle";
