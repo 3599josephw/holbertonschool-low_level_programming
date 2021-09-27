@@ -1,5 +1,9 @@
 #include <stdio.h>
-/* Prints out size of data types */
+/**
+ * main - Prints out the following text
+ *
+ * Return: 0
+ */
 int main(void)
 {
 int intType;
