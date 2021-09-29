@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - prints _putchar using _putchar
+ * print_alphabet_x10 - inception babey
  *
  * Return: On success 1.
  */
