@@ -4,9 +4,9 @@
  *
  * Return: yeehaw
  */
-int add(int, int)
+int add(int i, int j)
 {
-int i, j;
+int i, j, k;
 k = i + j;
 return j;
 }
