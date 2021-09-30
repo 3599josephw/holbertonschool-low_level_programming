@@ -9,22 +9,19 @@ void jack_bauer(void)
 {
 int h, m;
 for (h = 0; h <= 23; h++)
+{
+	for (m = 0; m <= 59; m++)
 	{
-		for (m = 0; m <= 59; m++)
+		if (h < 10)
 		{
-			if (h < 10)
-			{
-			printf("0");
-			}
-			printf("%d:", h);
-			if (m < 10)
-			{
-			printf("0");
-			}
-			printf("%d\n", m);
-			
+		printf("0");
 		}
-	
+		printf("%d:", h);
+		if (m < 10)
+		{
+		printf("0");
+		}
+		printf("%d\n", m);
+		}
 	}
-  
 }
