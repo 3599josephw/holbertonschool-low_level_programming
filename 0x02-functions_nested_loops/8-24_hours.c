@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_last_digit - stuff
- * @n: the int being checked
+ * jack_bauer - stuff
+ *
  * Return: yeehaw
  */
 void jack_bauer(void)
