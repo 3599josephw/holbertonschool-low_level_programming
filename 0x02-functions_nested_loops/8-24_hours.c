@@ -1,53 +1,30 @@
-#include "main.h"
 /**
  * jack_bauer - stuff
  *
  * Return: yeehaw
  */
+#include <stdio.h>
+#include "main.h"
 void jack_bauer(void)
 {
-int a;
-int b;
-int c;
-int d;
-for (a = '0'; a <= '2'; a++)
-{
-	if (a < '2')
+int h, m;
+for (h = 0; h <= 23; h++)
 	{
-		for (b = '0'; b <= '9'; b++)
+		for (m = 0; m <= 59; m++)
 		{
-			for (c = '0'; c <= '5'; c++)
+			if (h < 10)
 			{
-				for (d = '0'; d <= '9'; d++)
-				{
-				_putchar(a);
-				_putchar(b);
-				_putchar(':');
-				_putchar(c);
-				_putchar(d);
-				_putchar('\n');
-				}
+			printf("0");
 			}
-		}
-	}
-	else
-	{
-		for (b = '0'; b <= '3'; b++)
-		{
-			for (c = '0'; c <= '5'; c++)
+			printf("%d:", h);
+			if (m < 10)
 			{
-				for (d = '0'; d <= '9'; d++)
-				{
-				_putchar(a);
-				_putchar(b);
-				_putchar(':');
-				_putchar(c);
-				_putchar(d);
-				_putchar('\n');
-				}
+			printf("0");
 			}
+			printf("%d\n", m);
+			
 		}
+	
 	}
-}
-
+  
 }
