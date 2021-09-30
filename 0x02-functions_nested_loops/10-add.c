@@ -4,7 +4,7 @@
  *
  * Return: yeehaw
  */
-int add(int, int);
+int add(int, int)
 {
 int i, j;
 k = i + j;
