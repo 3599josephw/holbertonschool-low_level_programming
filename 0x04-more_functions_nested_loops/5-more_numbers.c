@@ -1,25 +1,25 @@
 #include "main.h"
 /**
- * more_numbers - check is uppercase
+ * more_numbers - print 0-14 with three putchars
  *
- * Return: On success 1.
+ * Return: nada.
  */
 void more_numbers(void)
 {
-int j, i;
+int j, i, first, last;
 
-for (j = 0; j < 10; j++)
+for (i = 0; i < 10; i++)
 {
-	for (i = 0; i <= 14; i++)
+	for (j = 0; j <= 14; j++)
 	{
-		if (i < 10)
+		last = j;
+		if (j >= 10)
 		{
-			_putchar('0' + (i % 10));
+			first = 1;
+			last = last % 10;
+			_putchar(first + '0');
 		}
-		else
-		{
-		  _putchar('0' + (i / 10));
-		}
+	_putchar(last + '0');
 	}
 	_putchar('\n');
 }
