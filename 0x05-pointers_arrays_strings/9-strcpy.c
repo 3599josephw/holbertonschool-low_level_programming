@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strcopy - copy a string
+ * *_strcpy - copy a string
  * @dest: variable string is copied to
  * @src: string being copied
  * Return: pointer to dest
