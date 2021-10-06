@@ -26,7 +26,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		halfway = (len - 1) / 2;
+		halfway = (len + 1) / 2;
 	}
 
 
