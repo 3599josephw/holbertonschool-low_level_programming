@@ -19,11 +19,7 @@ void puts2(char *str)
 		{
 			break;
 		}
-		i++                        ;
+		i++;
 	}
 	_putchar('\n');
-
-
-
-
 }
