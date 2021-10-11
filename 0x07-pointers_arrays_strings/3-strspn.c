@@ -8,7 +8,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 
-    int a, b, len;
+	int a, b, len;
 
 	a = 0;
 	len = 0;
@@ -20,7 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (s[a] == accept[b])
 			{
-			    len++;
+				len++;
 			}
 			b++;
 		}
