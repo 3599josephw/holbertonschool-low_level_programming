@@ -2,6 +2,7 @@
 /**
  * is_prime_number - prime number
  * @n: number entered
+ * @i: iterator
  * Return: 1 if prime, else 0
  */
 
@@ -10,9 +11,16 @@ int prime_num(int n, int i);
 int is_prime_number(int n)
 {
 	int ans = prime_num(n, 2);
+
 	return (ans);
 }
 
+/**
+ * prime_num - does the work
+ * @n: number given
+ * @i: iterator
+ * Return: 1 or 0
+ */
 
 int prime_num(int n, int i)
 {
