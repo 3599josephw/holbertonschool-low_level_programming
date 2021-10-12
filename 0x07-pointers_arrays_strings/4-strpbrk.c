@@ -8,7 +8,7 @@
 char *_strpbrk(char *s, char *accept)
 {
 
-    int a, b;
+	int a, b;
 
 	a = 0;
 
