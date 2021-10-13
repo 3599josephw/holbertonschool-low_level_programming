@@ -8,24 +8,23 @@
 char *leet(char *ch)
 {
 int a, b;
-char leet[] = {"aAeEoOtTlL"};
-char l33t[] = {"4433007711"};
+char letters[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+char numbers[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
 
 	a = 0;
 	b = 0;
 
-	while (ch[a] != '\0')
+	for (a = 0; ch[a] != 0; a++)
 	{
-		while (leet[b] != '\0' && ch[a] != leet[b])
+		for (b = 0; b <= 9; b++)
 		{
-			b++;
+			if (ch[a] == letters[b])
+			{
+				ch[a] = numbers[b];
+			}
 		}
-		if (b != '\0')
-		{
-		ch[a] = l33t[b];
-		}
-		a++;
 	}
+
 	return (ch);
 }
