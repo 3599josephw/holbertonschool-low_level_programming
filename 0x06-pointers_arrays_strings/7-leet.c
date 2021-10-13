@@ -8,8 +8,8 @@
 char *leet(char *ch)
 {
 int a, b;
-char lower[] = {"aAeEoOtTlL"};
-char upper[] = {"4433007711"};
+char leet[] = {"aAeEoOtTlL"};
+char l33t[] = {"4433007711"};
 
 
 	a = 0;
