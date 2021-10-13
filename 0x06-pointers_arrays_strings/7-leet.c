@@ -8,8 +8,8 @@
 char *leet(char *ch)
 {
 int a, b;
-char leet[11] = {"aAeEoOtTlL"};
-char l33t[11] = {"4433007711"};
+char lower[] = {"aAeEoOtTlL"};
+char upper[] = {"4433007711"};
 
 
 	a = 0;
@@ -21,7 +21,7 @@ char l33t[11] = {"4433007711"};
 		{
 			b++;
 		}
-		if (b <= 10)
+		if (b != '\0')
 		{
 		ch[a] = l33t[b];
 		}
