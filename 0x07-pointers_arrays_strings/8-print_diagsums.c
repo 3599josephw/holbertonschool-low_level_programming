@@ -8,18 +8,21 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, suma = 0, sumb = 0;
+	int i, *b, suma = 0, sumb = 0;
 
+	b = a;
 
 	for (i = 0; i < size; i++)
 	{
 		suma = suma + a[i];
+		a = a + size;
 	}
 	printf("%d, ", suma);
 
-	for (i = size; i > 0; i--)
+	for (i = size - 1; i >= 0; i--)
 	{
-		sumb = sumb + a[i];
+		sumb = sumb + b[i];
+		b = b + size;
 	}
 	printf("%d\n", sumb);
 
