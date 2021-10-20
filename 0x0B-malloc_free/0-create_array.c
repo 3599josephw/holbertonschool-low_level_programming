@@ -4,6 +4,7 @@
  * *create_array - array of chars
  * @size: of array
  * @c: character
+ * Return: the array
  */
 
 char *create_array(unsigned int size, char c)
@@ -11,7 +12,7 @@ char *create_array(unsigned int size, char c)
 	unsigned int i;
 	char *array;
 
-	array = malloc((size + 1) * sizeof(char));
+	array = malloc((size) * sizeof(char));
 
 	if (array == NULL || size == 0)
 	{
