@@ -3,13 +3,11 @@
 
 /**
  * struct dog - doggo
+ * dog_t - Typedef for struct dog
  * @name: dog name
  * @age: dog age
  * @owner: dog owner
  * Description: creates a struct about a dog
- */
-/**
- * dog_t - typedef for struct dog
  */
 typedef struct dog
 {
