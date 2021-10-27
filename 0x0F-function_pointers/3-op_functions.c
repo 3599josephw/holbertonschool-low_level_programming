@@ -1,4 +1,4 @@
-#include "function_pointers.h"
+#include "3-calc.h"
 /**
  * op_add - adds the arguments
  * @a: first argument
@@ -51,5 +51,5 @@ int op_div(int a, int b)
  */
 int op_mod(int a, int b)
 {
-	return (a % b);
+    return (a % b);
 }
