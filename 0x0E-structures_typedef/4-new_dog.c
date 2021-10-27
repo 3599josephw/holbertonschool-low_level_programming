@@ -12,7 +12,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *newdog;
-	char name2[] = "", owner2[] = "";
+	char *name2 = name, *owner2 = owner;
 
 	newdog = malloc(sizeof(dog_t));
 
@@ -23,9 +23,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	newdog->name = name;
 	newdog->age = age;
 	newdog->owner = owner;
-
-	memcpy (name2, name, sizeof(*name));
-	memcpy (owner2, owner, sizeof(*owner));
 
 	return (newdog);
 }
