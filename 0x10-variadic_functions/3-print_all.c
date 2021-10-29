@@ -3,8 +3,7 @@
 #include <string.h>
 /**
  * print_all - prints strings
- * @separator: string to be printed between numbers
- * @n: number of strings passed
+ * @format: string to be printed between numbers
  */
 void print_all(const char * const format, ...)
 {
@@ -21,7 +20,7 @@ void print_all(const char * const format, ...)
 	t = format;
 	while (*t != '\0')
 	{
-		switch(*t)
+		switch (*t)
 		{
 			case 'c':
 				i = va_arg(arg, int);
