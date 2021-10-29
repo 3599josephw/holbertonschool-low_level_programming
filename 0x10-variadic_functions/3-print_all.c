@@ -18,7 +18,6 @@ void print_all(const char * const format, ...)
 	len = (strlen(format) - 1);
 	index = 0;
 
-	printf("%d\n", len);
 	va_start(arg, format);
 
 	t = format;
