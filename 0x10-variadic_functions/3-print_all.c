@@ -17,11 +17,8 @@ void print_all(const char * const format, ...)
 
 	len = (strlen(format) - 1);
 	index = 0;
-
 	va_start(arg, format);
-
 	t = format;
-
 	while (*t != '\0')
 	{
 		switch(*t)
@@ -45,10 +42,8 @@ void print_all(const char * const format, ...)
 			}
 		if (index < len && (*t == 'i' || *t == 'c' || *t == 'f' || *t == 's'))
 			printf(", ");
-
 		index++;
 		t++;
 	}
-
 	printf("\n");
 }
