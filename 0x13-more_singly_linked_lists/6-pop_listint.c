@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_listint2 - free list
+ * pop_listint - free list
  * @head: the list
  * Return: nothing
  */
