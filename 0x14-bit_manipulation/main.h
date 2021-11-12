@@ -6,6 +6,8 @@
 
 int _putchar(char c);
 int power(int x, unsigned int y);
+char *_strrev(char *str);
+char *_itoa(int i, char *strout, int base);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
 int get_bit(unsigned long int n, unsigned int index);
