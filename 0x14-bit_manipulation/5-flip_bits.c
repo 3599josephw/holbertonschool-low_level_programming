@@ -16,6 +16,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 /**
  * count - count
  * @n: number
+ * Return: i
  */
 int count(int n)
 {
