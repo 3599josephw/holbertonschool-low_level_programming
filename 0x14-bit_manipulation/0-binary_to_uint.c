@@ -24,8 +24,25 @@ unsigned int binary_to_uint(const char *b)
 	{
 		rem = n % 10;
 		n /= 10;
-		dec += rem * pow(2, i);
+		dec += rem * power(2, i);
 		++i;
 	}
 	return (dec);
+}
+
+/**
+ * power - recreation of pow function
+ * @x: number given
+ * @y: raised to the power of
+ * Return: the result
+ */
+
+int power(int x, unsigned int y)
+{
+	if (y == 0)
+		return (1);
+	else if (y % 2 == 0)
+		return (power(x, y / 2) * power(x, y / 2));
+	else
+		return (x * power(x, y / 2) * power(x, y / 2));
 }
