@@ -8,16 +8,16 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 
-	int binary[32];
-	unsigned int i = 0;
+	int bit;
 
-	while (n > 0)
-	{
-		binary[i] = n % 2;
-		n = n / 2;
-		i++;
-	}
+	if (index > 31)
+		return (-1);
+	if (n == '\0')
+		return (-1);
 
-	return (binary[index]);
+	bit = (n >> index) & 1;
+
+	return (bit);
+
 
 }
