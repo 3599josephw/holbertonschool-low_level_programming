@@ -18,14 +18,6 @@ int get_bit(unsigned long int n, unsigned int index)
 		i++;
 	}
 
-	i = 0;
-	while (i <= index)
-	{
-		if (i == index)
-			return (binary[i]);
-		i++;
-	}
-
-	return (-1);
+	return (binary[index]);
 
 }
