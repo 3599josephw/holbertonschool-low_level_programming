@@ -1,7 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
-#include <string.h>
-#include <math.h>
+#include <stdio.h>
 /**
  * binary_to_uint - converts binary number to unsigned int
  * @b: array holding the binary number
@@ -10,7 +8,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int dec = 0, i = 0, rem;
-	unsigned int n = atoi(b);
+	int n = atoi(b);
 
 	if (b == NULL)
 		return (0);
