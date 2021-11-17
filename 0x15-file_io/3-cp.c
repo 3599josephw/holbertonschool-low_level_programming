@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", to);
 		exit(100);
 	}
-	close(from);
+	c = close(from);
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", from);
