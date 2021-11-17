@@ -43,7 +43,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", from);
 		exit(100);
 	}
-	return (1);
+	return (0);
 }
 /**
  * errmsg - errors
