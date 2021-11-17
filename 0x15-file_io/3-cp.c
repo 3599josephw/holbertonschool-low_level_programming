@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 	rd = read(from, buf1, 1024);
 	if (rd == -1)
 		exit(99);
-	to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0600);
+	to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
 	wr = write(to, buf1, rd);
 	if (to == -1 || wr == -1)
 	{
