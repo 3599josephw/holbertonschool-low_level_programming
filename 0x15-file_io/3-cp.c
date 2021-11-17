@@ -7,7 +7,7 @@
  */
 int main(int argc, char **argv)
 {
-	int from, to, wr, c, nchars;
+	int from, to, c, nchars;
 	char buf1[1024];
 
 	if (argc != 3)
