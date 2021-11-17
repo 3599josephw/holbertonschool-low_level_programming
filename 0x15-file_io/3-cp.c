@@ -46,7 +46,9 @@ int main(int argc, char **argv)
 }
 /**
  * errmsg - errors
- * 
+ * @file_from: from
+ * @file_to: to
+ * @argv: the argument
  */
 void errmsg(int file_from, int file_to, char *argv[])
 {
