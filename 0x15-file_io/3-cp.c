@@ -24,13 +24,11 @@ int main(int argc, char **argv)
 	if (to == -1)
 		errmsg(0, -1, argv);
 
-	while (nchars == 1024)
+	while ((nchars = read(from, buf1, 1024)) != 0)
 	{
-		nchars = read(from, buf1, 1024);
 		if (nchars == -1)
 			errmsg(-1, 0, argv);
-		wr = write(to, buf1, nchars);
-		if (wr == -1)
+		if (write(to, buf1, nchars) != nchars)
 			errmsg(0, -1, argv);
 	}
 	c = close(to);
