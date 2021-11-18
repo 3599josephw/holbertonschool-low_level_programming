@@ -7,7 +7,7 @@
  */
 int main(int argc, char **argv)
 {
-	int from, to, c, nchars;
+	int from, to, wr, c, nchars;
 	char buf1[1024];
 
 	if (argc != 3)
@@ -24,11 +24,13 @@ int main(int argc, char **argv)
 	if (to == -1)
 		errmsg(0, -1, argv);
 
-	while ((nchars = read(from, buf1, 1024)) != 0)
+	while (nchars == 1024)
 	{
+		nchars = read(from, buf1, 1024);
 		if (nchars == -1)
 			errmsg(-1, 0, argv);
-		if (write(to, buf1, nchars) != nchars)
+		wr = write(to, buf1, nchars);
+		if (wr == -1)
 			errmsg(0, -1, argv);
 	}
 	c = close(to);
