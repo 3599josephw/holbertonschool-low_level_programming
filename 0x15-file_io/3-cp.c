@@ -18,9 +18,9 @@ int main(int argc, char **argv)
 	nchars = 1024;
 
 	from = open(argv[1], O_RDONLY);
-	to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
 	if (from == -1)
 		errmsg(-1, 0, argv);
+	to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
 	if (to == -1)
 		errmsg(0, -1, argv);
 
