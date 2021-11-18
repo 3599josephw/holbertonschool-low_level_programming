@@ -7,13 +7,12 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd, j, len;
+	int fd, j;
 
 	if (filename == NULL)
 		return (-1);
 
-	len = strlen(text_content);
-
+	printf("%d\n", len);
 	fd = open(filename, O_WRONLY | O_APPEND);
 
 	if (fd == -1)
@@ -23,7 +22,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (1);
 	}
 
-	j = write(fd, text_content, len);
+	j = write(fd, text_content, strlen(text_content));
 
 	if (j == -1)
 		return (-1);
