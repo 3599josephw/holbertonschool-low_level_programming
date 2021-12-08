@@ -36,13 +36,14 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		current = current->next;
 		i++;
 	}
-	/* let index = 5, past is set to 4th, current goes to 5, future is 6 */
+	/* let index = 1, past is set to 0th, current goes to 1, future is 2 */
 	past = current;
 	current = current->next;
 	future = current->next;
 
 	past->next = future;
-	future->prev = past;
+	if (current-> next != NULL)
+		future->prev = past;
 
 	free(current);
 
