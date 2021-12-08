@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_dnodeint_end - returns number of elements in a linked list
+ * add_dnodeint_end - adds new node to end of list
  * @head: beginning of list
  * @n: data for node
  * Return: address of new node
@@ -32,6 +32,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		last = last->next;
 
 	last->next = new_node;
+	new_node->prev = last;
 
 	return (new_node);
 }
