@@ -18,15 +18,15 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (ht->array[index] == NULL)
 		return ("(null)");
 
-	if (ht->array[index]->next == NULL)
-		value = ht->array[index]->value;
-	else
+	while (ht->array[index] != NULL)
 	{
-		while (ht->array[index]->next != NULL)
-			ht->array[index] = ht->array[index]->next;
+		if (strcmp(ht->array[index]->key, key) == 0)
+		{
+			value = ht->array[index]->value;
+			return (value);
+		}
+		ht->array[index] = ht->array[index]->next;
 
-		value = ht->array[index]->value;
 	}
-
-	return (value);
+	return (NULL);
 }
