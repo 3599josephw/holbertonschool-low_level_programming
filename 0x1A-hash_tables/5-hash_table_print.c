@@ -5,8 +5,10 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i = 0, j, flag;
+unsigned long int i = 0, j, flag;
 
+if (ht)
+{
 	printf("{");
 	if (ht != NULL)
 	{
@@ -20,7 +22,7 @@ void hash_table_print(const hash_table_t *ht)
 				{
 					flag = 0;
 					if (ht->array[j] == NULL)
-						j++;
+					j++;
 					else
 					{
 						flag = 1;
@@ -34,4 +36,5 @@ void hash_table_print(const hash_table_t *ht)
 		}
 	}
 		printf("}\n");
+}
 }
