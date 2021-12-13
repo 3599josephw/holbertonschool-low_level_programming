@@ -13,10 +13,13 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (key == NULL)
 		return (NULL);
 
+	if (ht == NULL)
+		return (NULL)
+
 	index = key_index((const unsigned char *)key, ht->size);
 
 	if (ht->array[index] == NULL)
-		return ("(null)");
+		return (NULL);
 
 	while (ht->array[index] != NULL)
 	{
